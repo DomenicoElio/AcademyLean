@@ -1,8 +1,15 @@
-﻿using System;                   //Importing Namespace
+﻿using System; //Importing Namespace
+
+public class UnitConverter
+{
+    int ratio; //declearing variable
+    public UnitConverter(int unitRatio) { ratio = unitRatio; }
+    public int Convert(int unit) { return unit * ratio; } 
+}
 
 class Test                      //Class Declaration
 {
-    static void Main()          //Method Declaration
+     static void Main()          //Method Declaration
     {
         /*int var = 15 * 10;      //Declearing and Initializing variable 
         Console.WriteLine($"Your Variable is worth: {var}"); //Print to Console command
@@ -33,5 +40,11 @@ class Test                      //Class Declaration
         if (lesser)             //checks if lesser condition is true 
             Console.WriteLine("age is less then 26"); //because condition is true
 
+        UnitConverter  feetToInchesCon = new UnitConverter(15); //instance of unitConverter class
+        UnitConverter  milesToFeetCon = new UnitConverter(150); //instance of unitConverter class
+
+        Console.WriteLine(feetToInchesCon.Convert(30)); //calling obj and method with .method
+        Console.WriteLine(feetToInchesCon.Convert(300));//calling obj and method with .method
+        Console.WriteLine(feetToInchesCon.Convert(milesToFeetCon.Convert(15)));
     }
 }                               // end of Class
