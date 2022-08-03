@@ -8,6 +8,7 @@ using WorkbookLean_Academy;
     public int Convert(int unit) { return unit * ratio; } 
 }*/
 
+public struct Point { public int X, Y; }
 class Test                      //Class Declaration
 {
     static void Main()          //Method Declaration
@@ -59,6 +60,21 @@ class Test                      //Class Declaration
         int var = 12345; //int is 32 bit Integer
         long implicitConversion = var; // long is 64 bit Integer (therefore, since it can hold an int data, conversion is implicit)
         short explicitConversion = (short)var; //short is 16 bit Integer (therefore, since it cannot hold the same amount or more data then and int, conversion requires a "cast" - basically its forced, it may not work and some data can be lost)
+
+        Point point1 = new Point(); // assignment of value type instance will copy the value
+        point1.X = 15;
+
+        Point point2 = new Point();
+        point2 = point1;           // assignment copies the value
+
+        Console.WriteLine(point1.X); //15
+        Console.WriteLine(point2.X); //15
+
+        point1.X = 20;              // changing the value for p1 but not copying over to p2
+
+        Console.WriteLine(point1.X); // p1 is 20
+        Console.WriteLine(point2.X); //p2 remained 15
+
 
     }
 }                               // end of Class
