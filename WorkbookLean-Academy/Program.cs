@@ -60,7 +60,5 @@ class Test                      //Class Declaration
         long implicitConversion = var; // long is 64 bit Integer (therefore, since it can hold an int data, conversion is implicit)
         short explicitConversion = (short)var; //short is 16 bit Integer (therefore, since it cannot hold the same amount or more data then and int, conversion requires a "cast" - basically its forced, it may not work and some data can be lost)
 
-
-
     }
 }                               // end of Class
