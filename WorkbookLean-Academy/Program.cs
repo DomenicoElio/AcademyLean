@@ -75,7 +75,9 @@ class Test                      //Class Declaration
         Console.WriteLine(point1.X); // p1 is 20
         Console.WriteLine(point2.X); //p2 remained 15*/
 
-
+        int x = 0, y = 0;
+        Console.WriteLine(x++); // Outputs 0; x is now 1
+        Console.WriteLine(++y); // Outputs 1; y is now 1
 
     }
 }                               // end of Class
