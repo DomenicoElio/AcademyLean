@@ -49,7 +49,7 @@ class Test                      //Class Declaration
         Console.WriteLine(feetToInchesCon.Convert(300));//calling obj and method with .method
         Console.WriteLine(feetToInchesCon.Convert(milesToFeetCon.Convert(15)));*/
 
-        Human dom = new Human("Domenico"); // created instances of my Human
+        /*Human dom = new Human("Domenico"); // created instances of my Human
         Human jack = new Human("Giacomo"); //created instances of my Human 
 
         Console.WriteLine($"The name of the first born son is: {dom.Name}"); // print human name
@@ -73,7 +73,8 @@ class Test                      //Class Declaration
         point1.X = 20;              // changing the value for p1 but not copying over to p2
 
         Console.WriteLine(point1.X); // p1 is 20
-        Console.WriteLine(point2.X); //p2 remained 15
+        Console.WriteLine(point2.X); //p2 remained 15*/
+
 
 
     }
