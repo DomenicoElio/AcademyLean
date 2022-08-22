@@ -75,7 +75,7 @@ class Test                      //Class Declaration
         Console.WriteLine(point1.X); // p1 is 20
         Console.WriteLine(point2.X); //p2 remained 15*/
 
-        int x = 0, y = 0;
+        /*int x = 0, y = 0;
         Console.WriteLine(x++); // Outputs 0; x is now 1
         Console.WriteLine(++y); // Outputs 1; y is now 1
 
@@ -101,7 +101,7 @@ class Test                      //Class Declaration
         Console.WriteLine(double.IsNaN(0.0 / 0.0)); // necessary to test whether a value is NaN (not a number, can result only from floating point values)
 
         string bigName = "Domenico";
-        Console.WriteLine($"my name is: {bigName}"); // work continued all to string interpolation and arrays
+        Console.WriteLine($"my name is: {bigName}"); // work continued all to string interpolation and arrays*/
 
 
 
