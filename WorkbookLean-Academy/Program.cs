@@ -79,5 +79,26 @@ class Test                      //Class Declaration
         Console.WriteLine(x++); // Outputs 0; x is now 1
         Console.WriteLine(++y); // Outputs 1; y is now 1
 
+        int sample = 0; //difference between increment position (same with --)
+        Console.WriteLine(sample++); // value of sample incremented by 1 after writeline completed (prints 0 increments value to 1)
+        Console.WriteLine(++sample); // value increased by 1 more before function prints to terminal (value now 2 and prints 2)
+
+
+        int a = 1000000;
+        int b = 1000000;
+
+        int c = checked(a * b); // Checks just the expression.
+
+        checked // Checks all expressions
+        { 
+            c = a * b;// in statement block.
+        } //the checked operator is useful to "check" for overflow in the value of integral variables (whether the result of an operation on them exceeds the maximum value the variable type can store, however it incurs a cost on performance)
+
+
+        //int p = int.MaxValue + 1; // Compile-time error. this because we assign a value that is 1 higher then the max allowed, and variable is autormatically checked at runtime.
+        int uncheck= unchecked(int.MaxValue + 1); // No errors because we remove the check.
+
+        Console.WriteLine(double.IsNaN(0.0 / 0.0)); // necessary to test whether a value is NaN (not a number, can result only from floating point values)
+
     }
 }                               // end of Class
