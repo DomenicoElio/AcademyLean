@@ -100,5 +100,11 @@ class Test                      //Class Declaration
 
         Console.WriteLine(double.IsNaN(0.0 / 0.0)); // necessary to test whether a value is NaN (not a number, can result only from floating point values)
 
+        string bigName = "Domenico";
+        Console.WriteLine($"my name is: {bigName}"); // work continued all to string interpolation and arrays
+
+
+
+
     }
 }                               // end of Class
