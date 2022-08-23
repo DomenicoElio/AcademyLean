@@ -13,6 +13,14 @@ public class Point { public int X, Y; }
 //public struct Point { public int X, Y; }
 class Test                      //Class Declaration
 {
+
+    static void Swap(ref string a, ref string b)
+    {
+        string temp = a;
+        a = b;
+        b = temp;
+    }
+
     static void Main()          //Method Declaration
     {
         /*int var = 15 * 10;      //Declearing and Initializing variable 
@@ -172,6 +180,12 @@ class Test                      //Class Declaration
             Console.WriteLine(p);}
 
         Foo(8);
+
+        string x = "Penn";
+        string y = "Teller";
+        Swap(ref x, ref y);
+        Console.WriteLine(x); // Teller
+        Console.WriteLine(y); // Penn
 
 
 
