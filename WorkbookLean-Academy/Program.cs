@@ -10,7 +10,7 @@ using WorkbookLean_Academy;
 
 public class Point { public int X, Y; }
 
-public struct Point { public int X, Y; }
+//public struct Point { public int X, Y; }
 class Test                      //Class Declaration
 {
     static void Main()          //Method Declaration
