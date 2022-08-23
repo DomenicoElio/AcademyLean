@@ -8,7 +8,9 @@ using WorkbookLean_Academy;
     public int Convert(int unit) { return unit * ratio; } 
 }*/
 
-public struct Point { public int X, Y; }
+public class Point { public int X, Y; }
+
+//public struct Point { public int X, Y; }
 class Test                      //Class Declaration
 {
     static void Main()          //Method Declaration
@@ -121,7 +123,55 @@ class Test                      //Class Declaration
         int[] defaultValue = new int[500]; //decleared but not initialized, all memory elements will default to 0
         Console.WriteLine(defaultValue[173]);
 
+        /*Point[] f = new Point[500];
+        int m = f[350].X;*/ //this example refers to the struct on line 13 and prints a value of 0
 
+        Point[] point = new Point[500];
+        for (int i = 0; i < point.Length; i++) { point[i] = new Point(); }
+        // here the for iterated from 0 to 999 and here it assigns every iteration value with new point
+        //an array, remains always a reference type, an array element can refer to a null value 
+
+        char[] vowels = new char[] { 'a', 'e', 'i', 'o', 'u' };
+
+        char[] firstTwo = vowels[..2]; // 'a', 'e'
+        char[] lastThree = vowels[2..]; // 'i', 'o', 'u'
+        char[] middleOne = vowels[2..3]; // 'i'
+
+        //this use of ranges to slice through arrays can prove very valuable when looking for specific elements of an array 
+
+        int[,] matrix = new int[3, 3];
+
+        for (int i = 0; i < matrix.GetLength(0); i++)
+            for (int j = 0; j < matrix.GetLength(1); j++)
+                matrix[i, j] = i * 3 + j;
+        // sample declration rectangular array with 3x3 dimensions (rectangular arrays can have n dimesions)
+
+        int[,] matrixReloaded = new int[,]
+        {
+        {0,1,2},
+        {3,4,5},
+        {6,7,8}
+        };
+
+        // this is the same array as before, simple initialized and decleared immediately
+
+        int[][] jaggedMatrix = new int[3][];
+
+        for (int i = 0; i < matrix.Length; i++)
+        {
+            jaggedMatrix[i] = new int[3]; 
+            for (int j = 0; j < jaggedMatrix[i].Length; j++)
+                jaggedMatrix[i][j] = i * 3 + j;
+        }
+
+        //jagged arrays, being arrays of arrays, require for the outermost dimensions (0,3 so array 3x3) to be specified when decleared
+        //the inner array is then created
+
+        static void Foo (int p) { 
+        p = p+1;
+            Console.WriteLine(p);}
+
+        Foo(8);
 
 
 
