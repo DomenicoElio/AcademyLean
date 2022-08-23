@@ -10,7 +10,7 @@ using WorkbookLean_Academy;
 
 public class Point { public int X, Y; }
 
-//public struct Point { public int X, Y; }
+public struct Point { public int X, Y; }
 class Test                      //Class Declaration
 {
     static void Main()          //Method Declaration
@@ -105,7 +105,7 @@ class Test                      //Class Declaration
         string bigName = "Domenico";
         Console.WriteLine($"my name is: {bigName}"); // work continued all to string interpolation and arrays*/
 
-        char[] name = new char[4]; // declearing an array with 4 elements (characters)
+        /*char[] name = new char[4]; // declearing an array with 4 elements (characters)
 
         name[0] = 'd';
         name[1] = 'o';
@@ -126,12 +126,12 @@ class Test                      //Class Declaration
         /*Point[] f = new Point[500];
         int m = f[350].X;*/ //this example refers to the struct on line 13 and prints a value of 0
 
-        Point[] point = new Point[500];
-        for (int i = 0; i < point.Length; i++) { point[i] = new Point(); }
+        /*Point[] point = new Point[500];
+        for (int i = 0; i < point.Length; i++) { point[i] = new Point(); }*/
         // here the for iterated from 0 to 999 and here it assigns every iteration value with new point
         //an array, remains always a reference type, an array element can refer to a null value 
 
-        char[] vowels = new char[] { 'a', 'e', 'i', 'o', 'u' };
+        /*char[] vowels = new char[] { 'a', 'e', 'i', 'o', 'u' };
 
         char[] firstTwo = vowels[..2]; // 'a', 'e'
         char[] lastThree = vowels[2..]; // 'i', 'o', 'u'
@@ -151,18 +151,18 @@ class Test                      //Class Declaration
         {0,1,2},
         {3,4,5},
         {6,7,8}
-        };
+        };*/
 
         // this is the same array as before, simple initialized and decleared immediately
 
-        int[][] jaggedMatrix = new int[3][];
+        /*int[][] jaggedMatrix = new int[3][];
 
         for (int i = 0; i < matrix.Length; i++)
         {
             jaggedMatrix[i] = new int[3]; 
             for (int j = 0; j < jaggedMatrix[i].Length; j++)
                 jaggedMatrix[i][j] = i * 3 + j;
-        }
+        }*/
 
         //jagged arrays, being arrays of arrays, require for the outermost dimensions (0,3 so array 3x3) to be specified when decleared
         //the inner array is then created
