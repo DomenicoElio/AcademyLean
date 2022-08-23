@@ -103,6 +103,25 @@ class Test                      //Class Declaration
         string bigName = "Domenico";
         Console.WriteLine($"my name is: {bigName}"); // work continued all to string interpolation and arrays*/
 
+        char[] name = new char[4]; // declearing an array with 4 elements (characters)
+
+        name[0] = 'd';
+        name[1] = 'o';
+        name[2] = 'm';
+        name[3] = 'e';
+
+        Console.WriteLine(name[1]);
+
+        for (int i = 0; i < name.Length; i++) { Console.WriteLine(name[i]); }
+
+        char[] letters = new char[] { 'a', 'b', 'c' }; //initialization statement in two types
+        int[] numbers = { 1, 2, 3 };
+        Console.WriteLine(numbers[0]);
+
+        int[] defaultValue = new int[500]; //decleared but not initialized, all memory elements will default to 0
+        Console.WriteLine(defaultValue[173]);
+
+
 
 
 
