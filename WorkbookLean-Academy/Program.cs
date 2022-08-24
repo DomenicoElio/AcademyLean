@@ -204,7 +204,7 @@ class Test                      //Class Declaration
         Console.WriteLine(y); // Penn*/
 
 
-        Splits("Domenico Elio", out string a, out string b);
+        /*Splits("Domenico Elio", out string a, out string b);
         Console.WriteLine(a);
         Console.WriteLine(b);
 
@@ -253,16 +253,35 @@ class Test                      //Class Declaration
                     Console.WriteLine(cardNumber);
                     break;
             }
-        }
+        }*/
         //although this is the example from the textbook, a switch statement can be used, for example, in console apps
         //to set up a pseudo menu of choices that the user can select, determining therefore program execution
         //a switch case can also stack conditions and evaluate conditions based on types (if x!int) instead of values
 
 
         int i = 15;
-        while (i < 15) { Console.WriteLine(1); i++; }
+        while (i <= 20) 
+        { Console.WriteLine(i); i++; }
+        //a simple while statement will execute the code within after checking the condition (if condition is satsfied, in this case
+        // if i was 21) the while will consider the condition satsfied and not execude the code.
+
+
+        int example = 10;
+        do { Console.WriteLine(example); example++; }
+        while (example <= 20);
+        //on the contrary, a do while will always initially print the first time (the do) and only continue with the exectuion
+        //after checking the condition in the while (after).
+
+        int examples = 20;
+        for (int n = 0; n <= examples; n++) { Console.WriteLine(n); }
+        //a for is used to evaluate a condition based on a variable and perform a set of operation
+
+        string masterName="Domenico Elio";
+        foreach (char d in masterName) { Console.WriteLine(d); }
+        //the same goes for a foreach statement, however this is only used to iterate over elemnts of an enumerable object (such as a string in this case)
 
 
 
-}
+
+    }
 }                               // end of Class
