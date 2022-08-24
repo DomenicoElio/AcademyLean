@@ -259,7 +259,7 @@ class Test                      //Class Declaration
         //a switch case can also stack conditions and evaluate conditions based on types (if x!int) instead of values
 
 
-        int i = 15;
+        /*int i = 15;
         while (i <= 20) 
         { Console.WriteLine(i); i++; }
         //a simple while statement will execute the code within after checking the condition (if condition is satsfied, in this case
@@ -278,7 +278,7 @@ class Test                      //Class Declaration
 
         string masterName="Domenico Elio";
         foreach (char d in masterName) { Console.WriteLine(d); }
-        //the same goes for a foreach statement, however this is only used to iterate over elemnts of an enumerable object (such as a string in this case)
+        //the same goes for a foreach statement, however this is only used to iterate over elemnts of an enumerable object (such as a string in this case)*/
 
 
 
