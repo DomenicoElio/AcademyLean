@@ -234,10 +234,35 @@ class Test                      //Class Declaration
         //it is especially important, if several conditions (nested) are being evaluated, to use braces in order to improve readability and control the execution flow properly.
 
 
+        static void ShowCard(int cardNumber)
+        {
+            switch (cardNumber)
+            {
+                case 13:
+                    Console.WriteLine("King");
+                    break;
+                case 12:
+                    Console.WriteLine("Queen");
+                    break;
+                case 11:
+                    Console.WriteLine("Jack");
+                    break;
+                case -1: 
+                    goto case 12; 
+                default: 
+                    Console.WriteLine(cardNumber);
+                    break;
+            }
+        }
+        //although this is the example from the textbook, a switch statement can be used, for example, in console apps
+        //to set up a pseudo menu of choices that the user can select, determining therefore program execution
+        //a switch case can also stack conditions and evaluate conditions based on types (if x!int) instead of values
+
+
+        int i = 15;
+        while (i < 15) { Console.WriteLine(1); i++; }
 
 
 
-
-
-    }
+}
 }                               // end of Class
