@@ -14,12 +14,28 @@ public class Point { public int X, Y; }
 class Test                      //Class Declaration
 {
 
+    static int Sum(params int[] ints) { 
+        int sum = 0;
+        for (int i = 0; i < ints.Length; i++) 
+        sum += ints[i];
+        return sum;
+    }
+
+    static void Splits(string name, out string firstName, out string lastName) { 
+        int i = name.LastIndexOf(' ');
+        firstName = name.Substring(0, i);
+        lastName = name.Substring(i + 1);
+    }
+
     static void Swap(ref string a, ref string b)
     {
         string temp = a;
         a = b;
         b = temp;
     }
+
+    static string x = "Old Value";
+    static ref string GetX() => ref x;
 
     static void Main()          //Method Declaration
     {
@@ -175,7 +191,7 @@ class Test                      //Class Declaration
         //jagged arrays, being arrays of arrays, require for the outermost dimensions (0,3 so array 3x3) to be specified when decleared
         //the inner array is then created
 
-        static void Foo (int p) { 
+        /*static void Foo (int p) { 
         p = p+1;
             Console.WriteLine(p);}
 
@@ -185,7 +201,41 @@ class Test                      //Class Declaration
         string y = "Teller";
         Swap(ref x, ref y);
         Console.WriteLine(x); // Teller
-        Console.WriteLine(y); // Penn
+        Console.WriteLine(y); // Penn*/
+
+
+        Splits("Domenico Elio", out string a, out string b);
+        Console.WriteLine(a);
+        Console.WriteLine(b);
+
+        //int total = Sum(1, 2, 3, 4);
+        int total = Sum(new int[] { 1, 2, 3, 4 });
+        Console.WriteLine(total);
+
+
+        ref string xRef = ref GetX(); 
+        xRef = "New Value";
+        Console.WriteLine(x);
+
+
+        //as seen per all variable declaration and initialization, instead of specifying the type we can let the program infer the type and use var
+
+        var name = "Domenico";
+        Console.WriteLine(name); // in this case inferred type is a string
+
+        //very important section on null operators in page 70 to keep in mind when working with nulls in general
+
+        if (2 + 2 == 5)
+            Console.WriteLine("Does not compute");
+        else
+            Console.WriteLine("False");
+        //any if statement only computes if the first evaluation of the condition in parenthesis results true (a boolean expression).
+        // using the else clause, code can be added that will only execute in case the first condition results as false.
+        //it is especially important, if several conditions (nested) are being evaluated, to use braces in order to improve readability and control the execution flow properly.
+
+
+
+
 
 
 
