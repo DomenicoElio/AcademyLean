@@ -1,4 +1,4 @@
-﻿using System; //Importing Namespace
+﻿using System;
 using WorkbookLean_Academy;
 
 /*public class UnitConverter
@@ -7,6 +7,52 @@ using WorkbookLean_Academy;
     public UnitConverter(int unitRatio) { ratio = unitRatio; }
     public int Convert(int unit) { return unit * ratio; } 
 }*/
+
+
+public class Wallet {
+    decimal currentBalance;
+    public decimal CurrentBalance{ 
+        get { return currentBalance; }
+        set { currentBalance = value; }
+    }
+}
+
+//sample property. difference with fields lies in the presence of the getter and setter accessors
+
+
+public class Dog{
+    public string name;
+    public bool lovesHuman;
+    public bool likesCats;
+
+    public Dog() { }
+    public Dog(string n) { name = n; }
+}
+
+public class Monkey {
+    public Monkey Partner;
+
+    public void BecomeCouple(Monkey mate) { 
+        Partner = mate;
+        mate.Partner = this;
+    }
+}
+
+
+public class Square {
+    public readonly float Width,Height;
+
+    public Square(float width, float height) {
+        Width = width;
+        Height = height;
+    }
+    public void Deconstruct(out float width, out float height)
+    {
+        width = Width;
+        height = Height;
+    }
+}
+
 
 public class Human { 
     string named; //definition of the field
@@ -21,6 +67,11 @@ public class Point { public int X, Y; }
 //public struct Point { public int X, Y; }
 class Test                      //Class Declaration
 {
+    string firstName;
+    public Test(string firstName) { this.firstName = firstName; }
+
+    //sample use this. reference with the monkey class
+
 
     static int Sum(params int[] ints) { 
         int sum = 0;
@@ -293,7 +344,23 @@ class Test                      //Class Declaration
         Human domenico = new Human("Domenico"); //constrctor created above in the human class. first example of a constructor
 
 
+        var matrcx = new Square(10, 20);
+        (float width, float height) = matrcx; // deconstructor is called
+        Console.WriteLine(width+ "" + height); //the values passed will be printed
 
 
-    }
-}                               // end of Class
+        Dog nano = new Dog { name = "nano", lovesHuman = true, likesCats = false };
+        Dog ciack = new Dog("Ciack") { lovesHuman = true, likesCats = false };
+
+        //both of these examples using the class dog show how its possible to build an object
+        //using object initializers. It is important to ditinguish and evaluate between object initializers and optional parameters.
+
+        Wallet nftStorage = new Wallet();
+        nftStorage.CurrentBalance = 150;
+        nftStorage.CurrentBalance -= 350;
+        Console.WriteLine(nftStorage.CurrentBalance);
+        //sample of a class's property. how to define and initialize it.
+
+
+    } // end of <main> class
+} //end of <test> class
