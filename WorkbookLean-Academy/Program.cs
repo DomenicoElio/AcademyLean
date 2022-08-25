@@ -8,6 +8,14 @@ using WorkbookLean_Academy;
     public int Convert(int unit) { return unit * ratio; } 
 }*/
 
+public class Human { 
+    string named; //definition of the field
+    public Human(string n) { //definition of the constructor
+        named = n; //initialization code
+    } 
+    //same constructor could be also written as:
+    //public Human (string n) => named = n; (expression bodied statement)
+}
 public class Point { public int X, Y; }
 
 //public struct Point { public int X, Y; }
@@ -279,6 +287,10 @@ class Test                      //Class Declaration
         string masterName="Domenico Elio";
         foreach (char d in masterName) { Console.WriteLine(d); }
         //the same goes for a foreach statement, however this is only used to iterate over elemnts of an enumerable object (such as a string in this case)*/
+
+        //first pages of work on classes and methods - so far mostly theory so no relevant code written.
+
+        Human domenico = new Human("Domenico"); //constrctor created above in the human class. first example of a constructor
 
 
 
