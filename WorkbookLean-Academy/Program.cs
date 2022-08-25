@@ -11,6 +11,24 @@ using WorkbookLean_Academy;
 
 public class Wallet {
     decimal currentBalance;
+
+    decimal overallValue, marketPrediction;
+
+    decimal marketSize = 150.34539423M;
+    public decimal OverallValue { 
+        get { return overallValue * marketPrediction; }
+    }
+    //sample of a read-only calculated prpoperty.
+    //read-only cause only the getter is specified and calculated because the value is the result of an expression
+    
+    public decimal MarketCap { 
+        get => marketSize % overallValue;
+        set => marketSize = marketSize * marketPrediction;
+    }
+
+    //sample implementation of expression bodied properties using cleaner syntax and integrating the setter
+    //(current property is only an example, mathematically non-sensical. will be fixed)
+
     public decimal CurrentBalance{ 
         get { return currentBalance; }
         set { currentBalance = value; }
@@ -360,6 +378,11 @@ class Test                      //Class Declaration
         nftStorage.CurrentBalance -= 350;
         Console.WriteLine(nftStorage.CurrentBalance);
         //sample of a class's property. how to define and initialize it.
+        //property is read-only if it only specifies the getter - write only if it only specifies the setter
+
+
+
+
 
 
     } // end of <main> class
