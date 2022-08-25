@@ -8,6 +8,14 @@ using WorkbookLean_Academy;
     public int Convert(int unit) { return unit * ratio; } 
 }*/
 
+public class Sentence{
+    string[] words = "the wolf eats the sheep".Split();
+    //calling .Split() method to split the string 
+    public string this[int wordNum] { //defining the indexer
+        get { return words[wordNum]; } //getter takes and returnd the number of words (string already split)
+        set { words[wordNum] = value; } // set gives the value of the get to the variable word (one of the words from the split string is taken and replaced based on index position)
+    }
+}
 
 public class Wallet {
     decimal currentBalance;
@@ -36,6 +44,8 @@ public class Wallet {
 }
 
 //sample property. difference with fields lies in the presence of the getter and setter accessors
+//getter and setter can have different access modifiers.
+//sample: get {return currentBalance;} internal set {currentBalange-marketEvaluation;}
 
 
 public class Dog{
@@ -380,7 +390,18 @@ class Test                      //Class Declaration
         //sample of a class's property. how to define and initialize it.
         //property is read-only if it only specifies the getter - write only if it only specifies the setter
 
+        string indexersExamples="Mario Palladino";
+        Console.WriteLine(indexersExamples[9]);
+        string nullSample = null;
+        Console.WriteLine(nullSample?[0]);
+        //whilst the syntax is similar to arrays (points to a specific position of an index calling the, in this case,
+        //variable, and specifying the [position] it is different as they access via an index argument. pg. 102)
+        //indexers can be called null, as shown (nothing will show -null-)
 
+        Sentence sentence = new Sentence();//creating obj of Sentence class 
+        Console.WriteLine(sentence[4]);//using indexer to print original value of word in position [4] from split string 
+        sentence[4] = "Sharks"; //replacing the value of said word with a new word using the indexer
+        Console.WriteLine(sentence[4]);//showing the result of the substition
 
 
 
