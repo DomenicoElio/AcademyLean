@@ -8,6 +8,18 @@ using WorkbookLean_Academy;
     public int Convert(int unit) { return unit * ratio; } 
 }*/
 
+class SampleInitialization
+{
+    public static int X = Y; 
+    public static int Y = 3; 
+}
+
+class AlternativeInitialization { 
+    public static AlternativeInitialization Instance = new AlternativeInitialization();
+    public static int X = 3;
+    AlternativeInitialization() { Console.WriteLine(X); } 
+}
+
 public class Sentence{
     string[] words = "the wolf eats the sheep".Split();
     //calling .Split() method to split the string 
@@ -402,6 +414,8 @@ class Test                      //Class Declaration
         Console.WriteLine(sentence[4]);//using indexer to print original value of word in position [4] from split string 
         sentence[4] = "Sharks"; //replacing the value of said word with a new word using the indexer
         Console.WriteLine(sentence[4]);//showing the result of the substition
+
+        Console.WriteLine(SampleInitialization.X);
 
 
 
