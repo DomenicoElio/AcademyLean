@@ -381,7 +381,7 @@ class Test                      //Class Declaration
 
         //first pages of work on classes and methods - so far mostly theory so no relevant code written.
 
-        Human domenico = new Human("Domenico"); //constrctor created above in the human class. first example of a constructor
+        /*Human domenico = new Human("Domenico"); //constrctor created above in the human class. first example of a constructor
 
 
         var matrcx = new Square(10, 20);
@@ -415,7 +415,7 @@ class Test                      //Class Declaration
         sentence[4] = "Sharks"; //replacing the value of said word with a new word using the indexer
         Console.WriteLine(sentence[4]);//showing the result of the substition
 
-        Console.WriteLine(SampleInitialization.X);
+        Console.WriteLine(SampleInitialization.X);*/
 
 
 
