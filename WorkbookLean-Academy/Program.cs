@@ -27,6 +27,7 @@ public struct Point{
 
 public class Animal { public string ?name; public virtual string  AnimalSounds => "sounds";}
 //parent class lion with name
+//?name the ?represents that the value type variable can be a nullable type or null value
 public class Lion : Animal { public int numberOfLegs; public override string AnimalSounds => "roar"; }
 //lion class extends parent animal class and inherits name field
 public class Baboon : Animal { public bool similarToHumans; public override string AnimalSounds => "speak"; }
@@ -485,6 +486,13 @@ class Test                      //Class Declaration
         Console.WriteLine(s == leftRight); // True
         s ^= BorderSides.Right; // Toggles BorderSides.Right
         Console.WriteLine(s);
+
+
+
+        int? i = null; // OK, nullable type
+        Console.WriteLine(i == null); // True
+        //introduction to nullable value type, used before in class definition without knowing it would be faced later
+        //value types in itself cannot be null 
 
     } // end of <main> class
 } //end of <test> class
