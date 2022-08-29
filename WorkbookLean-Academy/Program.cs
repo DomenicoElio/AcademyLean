@@ -12,7 +12,7 @@ public struct Point{
     int x, y;
     public Point(int x, int y) { this.x = x; this.y = y; }
 }
-//sample of a struct - cmpared to classes, a struct doesnt support inheritance and its members cannot be initialized
+//sample of a struct - compared to classes, a struct doesnt support inheritance and its members cannot be initialized
 
 public class Animal { public string ?name; public virtual string  AnimalSounds => "sounds";}
 //parent class lion with name
@@ -459,7 +459,7 @@ class Test                      //Class Declaration
 
         Point p1 = new Point(); // p1.x and p1.y will be 0
         Point p2 = new Point(1, 1); // p2.x and p2.y will be 1
-        //this is because, considering a struct can'0t initialize fields, their value will be their default value
+        //this is because, considering a struct can't initialize fields, their value will be their default value
 
 
     } // end of <main> class
