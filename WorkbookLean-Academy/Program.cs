@@ -8,6 +8,17 @@ using WorkbookLean_Academy;
     public int Convert(int unit) { return unit * ratio; } 
 }*/
 
+public class TopLevel{
+    public class Nested { } // Nested class
+    public enum Color { Red, Blue, Tan } // Nested enum
+}
+//it is fundamental that the underlying advantage of using nested types (for enums) is that not only do they gain access to the 
+//methods of the broader class they are decleared in, but they also gain access to the use of a wider range of access modifiers.
+//a nested type should be considered when one wants to retain better control over access, not to avoid cluttering!
+
+
+[Flags]
+enum BorderSides { None = 0, Left = 1, Right = 2, Top = 4, Bottom = 8 }
 public struct Point{
     int x, y;
     public Point(int x, int y) { this.x = x; this.y = y; }
@@ -120,7 +131,7 @@ public class Human {
     //same constructor could be also written as:
     //public Human (string n) => named = n; (expression bodied statement)
 }
-public class Point { public int X, Y; }
+//public class Point { public int X, Y; }
 
 //public struct Point { public int X, Y; }
 class Test                      //Class Declaration
@@ -461,6 +472,19 @@ class Test                      //Class Declaration
         Point p2 = new Point(1, 1); // p2.x and p2.y will be 1
         //this is because, considering a struct can't initialize fields, their value will be their default value
 
+
+        BorderSides leftRight = BorderSides.Left | BorderSides.Right;
+
+        if ((leftRight & BorderSides.Left) != 0)
+            Console.WriteLine("Includes Left"); // Includes Left
+
+        string formatted = leftRight.ToString(); // "Left, Right"
+
+        BorderSides s = BorderSides.Left;
+        s |= BorderSides.Right;
+        Console.WriteLine(s == leftRight); // True
+        s ^= BorderSides.Right; // Toggles BorderSides.Right
+        Console.WriteLine(s);
 
     } // end of <main> class
 } //end of <test> class
