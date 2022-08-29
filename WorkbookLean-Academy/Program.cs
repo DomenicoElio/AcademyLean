@@ -7,7 +7,12 @@ using WorkbookLean_Academy;
     public UnitConverter(int unitRatio) { ratio = unitRatio; }
     public int Convert(int unit) { return unit * ratio; } 
 }*/
-
+public class Animal { public string ?name; }
+//parent class lion with name
+public class Lion : Animal { public int numberOfLegs; }
+//lion class extends parent animal class and inherits name field
+public class Baboon : Animal { public bool similarToHumans; }
+//baboon class extends parent animal class and inherits name field
 class SampleInitialization
 {
     public static int X = Y; 
@@ -416,6 +421,29 @@ class Test                      //Class Declaration
         Console.WriteLine(sentence[4]);//showing the result of the substition
 
         Console.WriteLine(SampleInitialization.X);*/
+
+        Baboon mike = new Baboon { name = "Mike",
+                                    similarToHumans=true};
+        //created new baboon obj with both the field inherited from animal (name) and the boolean condition of the class.
+
+        string decision;
+        if (mike.similarToHumans == true)
+        {
+            decision = "yes";
+        }
+        else { decision = "seems impossible"; }
+
+        //creates local variable to send custom response based on the the boolean condition.
+            
+
+        Console.WriteLine($" Our lovely Baboon's name is: {mike.name}. Do you think he resembles humans? {decision}");
+        //prints out the fields
+
+        Lion john = new Lion { name = "John",
+                                   numberOfLegs = 4 };
+        //creates new obj that as before extends both field of parent class and lion class
+        Console.WriteLine($" This lion is called: {john.name} and he has {john.numberOfLegs} legs!");
+        //prints the fields of the obj and class
 
 
 
