@@ -494,5 +494,9 @@ class Test                      //Class Declaration
         //introduction to nullable value type, used before in class definition without knowing it would be faced later
         //value types in itself cannot be null 
 
+        void Food(string? s){
+            if (s != null) Console.Write(s.Length);}
+        //sample use of null reference forgiving operator in order to avoid a NullReferenceException
+
     } // end of <main> class
 } //end of <test> class
