@@ -498,5 +498,27 @@ class Test                      //Class Declaration
             if (s != null) Console.Write(s.Length);}
         //sample use of null reference forgiving operator in order to avoid a NullReferenceException
 
+        bool[] carson = new bool[] { true, false, true, true, false };
+        bool outcome;
+        Console.WriteLine("Hi there, pleases select a number from 0 to 4");
+        string userImput = Console.ReadLine();
+        if (userImput == "0") {
+            outcome = carson[0];
+            Console.WriteLine($"You entered a {outcome} imput");
+        } if (userImput == "1") {
+            outcome = carson[1];
+            Console.WriteLine($"You entered a {outcome} imput");
+                }
+        if (userImput == "2"){
+            outcome = carson[2];
+            Console.WriteLine($"You entered a {outcome} imput");
+        }
+        else {
+            outcome = carson[3];
+            Console.WriteLine($"You entered a {outcome} imput");
+        }
+
+
+
     } // end of <main> class
 } //end of <test> class
