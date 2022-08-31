@@ -8,7 +8,7 @@ namespace CreatingTypes_PracticeExercises.Interfaces
 {
     public interface IEncrypter
     {
-        public string Encrypt(string encrypted);
-        public string Decrypt(string decpryted);
+        public string Encrypt(string encrypt);
+        public string Decrypt(string decrypt);
     }
 }
