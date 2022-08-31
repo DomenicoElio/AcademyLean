@@ -21,7 +21,8 @@ namespace CreatingTypes_PracticeExercises.Entities
             for (int i=0; i<decrypt.Length; i++) {
                 Debug.Assert (decrypt.Length == 1 && Regex.IsMatch(decrypt, "[a-yA-y]"));
                 var next = (char)(decrypt[0] - 1); 
-                next.ToString(); }
+                next.ToString(); 
+            }
 
             return decrypt;
         }
@@ -32,8 +33,7 @@ namespace CreatingTypes_PracticeExercises.Entities
 
             encrypt.Split(' ');
 
-            for (int i = 0; i < encrypt.Length; i++)
-            {
+            for (int i = 0; i < encrypt.Length; i++) {
                 Debug.Assert(encrypt.Length == 1 && Regex.IsMatch(encrypt, "[a-yA-y]"));
                 var next = (char)(encrypt[0] + 1);
                 next.ToString();
