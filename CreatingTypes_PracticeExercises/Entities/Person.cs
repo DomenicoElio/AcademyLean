@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace CreatingTypes_PracticeExercises.Entities
 {
-    internal class Person
+    public class Person
     {
         public string? Name { get; set; }
 
-        public void ShowData() { }
+        public void ShowData(House house) { Console.WriteLine($"Ciao, il mio nome è {Name} and {house.ShowData} {house.GetDoor}"); }
     }
 }

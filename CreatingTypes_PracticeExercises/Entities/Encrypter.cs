@@ -12,7 +12,8 @@ namespace CreatingTypes_PracticeExercises.Entities
 {
     public class Encrypter : IEncrypter
     {
-        public string Decrypt(string decrypt) {
+        public string Decrypt() {
+            string decrypt;
             Console.WriteLine("Insert the word you would like to decrypt: ");
             decrypt = Console.ReadLine();
 
@@ -27,7 +28,8 @@ namespace CreatingTypes_PracticeExercises.Entities
             return decrypt;
         }
 
-        public string Encrypt(string encrypt) {
+        public string Encrypt() {
+            string encrypt;
             Console.WriteLine("Insert the password you would like to encrypt: ");
             encrypt = Console.ReadLine();
 

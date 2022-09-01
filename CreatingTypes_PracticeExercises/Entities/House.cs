@@ -14,7 +14,8 @@ namespace CreatingTypes_PracticeExercises.Entities
 
         public void ShowData() { Console.WriteLine($"I am a house, my area is {Area} square meters"); }
 
-        public void GetDoor(Door door) { }
+        public void GetDoor(Door door) { Console.WriteLine($"The door necessary to open this house is {door.Color.ToString()}") ; }
+    }
 
     }
 }
