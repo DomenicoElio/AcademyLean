@@ -10,6 +10,7 @@ namespace CreatingTypes_PracticeExercises.Entities
     {
         public int Area { get; set; }
 
+        public House() { }
         public House(int area) { Area = area; }
 
         public void ShowData() { Console.WriteLine($"I am a house, my area is {Area} square meters"); }

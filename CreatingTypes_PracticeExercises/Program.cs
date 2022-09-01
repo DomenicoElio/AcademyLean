@@ -4,7 +4,7 @@ using CreatingTypes_PracticeExercises.Entities;
 class Academy {
     static void Main() {
 
-        
+        SmallApartment miniscule = new SmallApartment() { Area = 50 };
         //simplified declaration of new obj from person class with implementation of name attribute
         
         

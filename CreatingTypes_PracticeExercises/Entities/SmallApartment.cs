@@ -8,7 +8,8 @@ namespace CreatingTypes_PracticeExercises.Entities
 {
     public class SmallApartment : House
     {
-        public SmallApartment(int area) : base(area) { area = 50; }
+        public SmallApartment() { }
 
+        public SmallApartment(int area) : base(area) { }
     }
 }
