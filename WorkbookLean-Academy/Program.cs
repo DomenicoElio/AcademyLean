@@ -388,7 +388,7 @@ class Test                      //Class Declaration
         //a switch case can also stack conditions and evaluate conditions based on types (if x!int) instead of values
 
 
-        /*int i = 15;
+        int i = 15;
         while (i <= 20) 
         { Console.WriteLine(i); i++; }
         //a simple while statement will execute the code within after checking the condition (if condition is satsfied, in this case
@@ -406,12 +406,12 @@ class Test                      //Class Declaration
         //a for is used to evaluate a condition based on a variable and perform a set of operation
 
         string masterName="Domenico Elio";
-        foreach (char d in masterName) { Console.WriteLine(d); }
-        //the same goes for a foreach statement, however this is only used to iterate over elemnts of an enumerable object (such as a string in this case)*/
+        foreach (char d in masterName) { Console.WriteLine(d); 
+        //the same goes for a foreach statement, however this is only used to iterate over elemnts of an enumerable object (such as a string in this case)
 
         //first pages of work on classes and methods - so far mostly theory so no relevant code written.
 
-        /*Human domenico = new Human("Domenico"); //constrctor created above in the human class. first example of a constructor
+        Human domenico = new Human("Domenico"); //constrctor created above in the human class. first example of a constructor
 
 
         var matrcx = new Square(10, 20);
@@ -445,7 +445,7 @@ class Test                      //Class Declaration
         sentence[4] = "Sharks"; //replacing the value of said word with a new word using the indexer
         Console.WriteLine(sentence[4]);//showing the result of the substition
 
-        Console.WriteLine(SampleInitialization.X);*/
+        Console.WriteLine(SampleInitialization.X);
 
         Baboon mike = new Baboon { name = "Mike",
                                     similarToHumans=true};
