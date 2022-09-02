@@ -320,7 +320,7 @@ class Test                      //Class Declaration
         //jagged arrays, being arrays of arrays, require for the outermost dimensions (0,3 so array 3x3) to be specified when decleared
         //the inner array is then created
 
-        /*static void Foo (int p) { 
+        static void Foo (int p) { 
         p = p+1;
             Console.WriteLine(p);}
 
@@ -330,10 +330,10 @@ class Test                      //Class Declaration
         string y = "Teller";
         Swap(ref x, ref y);
         Console.WriteLine(x); // Teller
-        Console.WriteLine(y); // Penn*/
+        Console.WriteLine(y); // Penn
 
 
-        /*Splits("Domenico Elio", out string a, out string b);
+        Splits("Domenico Elio", out string a, out string b);
         Console.WriteLine(a);
         Console.WriteLine(b);
 
@@ -382,7 +382,7 @@ class Test                      //Class Declaration
                     Console.WriteLine(cardNumber);
                     break;
             }
-        }*/
+        }
         //although this is the example from the textbook, a switch statement can be used, for example, in console apps
         //to set up a pseudo menu of choices that the user can select, determining therefore program execution
         //a switch case can also stack conditions and evaluate conditions based on types (if x!int) instead of values
