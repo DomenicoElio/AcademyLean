@@ -17,6 +17,4 @@ namespace CreatingTypes_PracticeExercises.Entities
 
         public void GetDoor(Door door) { Console.WriteLine($"The door necessary to open this house is {door.Color.ToString()}") ; }
     }
-
-    }
 }
