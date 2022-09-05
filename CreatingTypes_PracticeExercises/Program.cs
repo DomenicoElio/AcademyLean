@@ -10,9 +10,9 @@ class Academy {
         miniscule.Area = 50; // assigning 50 to area value for miniscule obj
         miniscule.ShowData(); //caling method ShowData of House
 
-        Encrypter mario = new Encrypter();
-        mario.Decrypt();
-        mario.Encrypt();
+        //Encrypter mario = new Encrypter();
+        //mario.Decrypt();
+        //mario.Encrypt();
 
     }
 }
