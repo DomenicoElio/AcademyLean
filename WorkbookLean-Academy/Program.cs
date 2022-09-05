@@ -164,11 +164,11 @@ class Test                      //Class Declaration
     }
 
     static string x = "Old Value";
-    static ref string GetX() => ref x;
+    //static ref string GetX() => ref x;
 
     static void Main()          //Method Declaration
     {
-        /*int var = 15 * 10;      //Declearing and Initializing variable 
+        int var = 15 * 10;      //Declearing and Initializing variable 
         Console.WriteLine($"Your Variable is worth: {var}"); //Print to Console command
         Console.WriteLine($"Your conversion result is: {FeetToInches(15)}");  //calling method and passing the feet value needed: 225
         Console.WriteLine($"Your conversion result is: {FeetToInches(150)}"); //calling method and passing the feet value needed: 2250
@@ -178,7 +178,7 @@ class Test                      //Class Declaration
     { //creating method that converts feet to inch: accept feet (int feet) as imput
         int inches = feet * 15;
         return inches;                  // returns inches
-    }*/
+    }
 
         /*string name = "domenico";    //first use of strings to store name
         string upperCase = name.ToUpper(); // calling the String method to Pascal case (upper first words) 
