@@ -2,21 +2,21 @@
 using WorkbookLean_Academy;
 
 
-/*public class Human
+public class Human
 {
     public string Name; // property per each human (instance field - must be instanciated whenever i create a new instance of "Human" or obj)
     public static int Population; //properties of the human class (static field - does not need to be instanciated every time i create an obj, its instrinsic to the class)
 
     public Human(string n)   // constructor of Human class
     { Name = n; Population = Population + 1; } //per each human created increment static value of population
-}*/
+}
 
-/*public class UnitConverter
+public class UnitConverter
 {
     int ratio; //declearing variable
     public UnitConverter(int unitRatio) { ratio = unitRatio; }
     public int Convert(int unit) { return unit * ratio; } 
-}*/
+}
 
 public class TopLevel{
     public class Nested { } // Nested class
@@ -144,11 +144,11 @@ public class Human {
 }
 //public class Point { public int X, Y; }
 
-//public struct Point { public int X, Y; }
-class Test                      //Class Declaration
+//public struct Point { public int X, Y; } 
+public class Program                      //Class Declaration
 {
     string firstName;
-    public Test(string firstName) { this.firstName = firstName; }
+    public Program(string firstName) { this.firstName = firstName; }
 
     //sample use this. reference with the monkey class
 
@@ -176,19 +176,17 @@ class Test                      //Class Declaration
     static string x = "Old Value";
     //static ref string GetX() => ref x;
 
-    static void Main()          //Method Declaration
-    {
+    static void Main() {           //Method Declaration
         int var = 15 * 10;      //Declearing and Initializing variable 
         Console.WriteLine($"Your Variable is worth: {var}"); //Print to Console command
         Console.WriteLine($"Your conversion result is: {FeetToInches(15)}");  //calling method and passing the feet value needed: 225
         Console.WriteLine($"Your conversion result is: {FeetToInches(150)}"); //calling method and passing the feet value needed: 2250
-    }
 
     static int FeetToInches(int feet)
-    { //creating method that converts feet to inch: accept feet (int feet) as imput
-        int inches = feet * 15;
-        return inches;                  // returns inches
-    }
+        { //creating method that converts feet to inch: accept feet (int feet) as imput
+            int inches = feet * 15;
+            return inches;                  // returns inches
+        }
 
         /*string name = "domenico";    //first use of strings to store name
         string upperCase = name.ToUpper(); // calling the String method to Pascal case (upper first words) 
@@ -401,8 +399,8 @@ class Test                      //Class Declaration
         int i = 15;
         while (i <= 20) 
         { Console.WriteLine(i); i++; }
-        //a simple while statement will execute the code within after checking the condition (if condition is satsfied, in this case
-        // if i was 21) the while will consider the condition satsfied and not execude the code.
+//a simple while statement will execute the code within after checking the condition (if condition is satsfied, in this case
+// if i was 21) the while will consider the condition satsfied and not execude the code.
 
 
         int example = 10;
@@ -416,7 +414,7 @@ class Test                      //Class Declaration
         //a for is used to evaluate a condition based on a variable and perform a set of operation
 
         string masterName="Domenico Elio";
-        foreach (char d in masterName) { Console.WriteLine(d); 
+        foreach (char d in masterName) { Console.WriteLine(d); }
         //the same goes for a foreach statement, however this is only used to iterate over elemnts of an enumerable object (such as a string in this case)
 
         //first pages of work on classes and methods - so far mostly theory so no relevant code written.
@@ -527,11 +525,6 @@ class Test                      //Class Declaration
             outcome = carson[3];
             Console.WriteLine($"You entered a {outcome} imput");
         }
-
- 
-        
-
-
-
     } // end of <main> class
-} //end of <test> class
+}
+//end of <test> class
