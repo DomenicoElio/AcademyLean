@@ -134,9 +134,9 @@ public class Square {
 }
 
 
-public class Human { 
+public class Humanity { 
     string named; //definition of the field
-    public Human(string n) { //definition of the constructor
+    public Humanity(string n) { //definition of the constructor
         named = n; //initialization code
     } 
     //same constructor could be also written as:
@@ -419,7 +419,7 @@ public class Program                      //Class Declaration
 
         //first pages of work on classes and methods - so far mostly theory so no relevant code written.
 
-        Human domenico = new Human("Domenico"); //constrctor created above in the human class. first example of a constructor
+        Humanity domenico = new Humanity("Domenico"); //constrctor created above in the human class. first example of a constructor
 
 
         var matrcx = new Square(10, 20);
