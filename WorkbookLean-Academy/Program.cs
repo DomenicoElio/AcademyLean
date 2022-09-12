@@ -350,11 +350,9 @@ public class Program                      //Class Declaration
         Console.WriteLine(total);
 
 
-        ref string xRef = ref GetX(); 
+        /*ref string xRef = ref GetX(); 
         xRef = "New Value";
-        Console.WriteLine(x);
-
-
+        Console.WriteLine(x);*/
         //as seen per all variable declaration and initialization, instead of specifying the type we can let the program infer the type and use var
 
         var name = "Domenico";
