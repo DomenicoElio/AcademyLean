@@ -497,8 +497,8 @@ public class Program                      //Class Declaration
 
 
 
-        int? i = null; // OK, nullable type
-        Console.WriteLine(i == null); // True
+        int? sampleNull = null; // OK, nullable type
+        Console.WriteLine(sampleNull == null); // True
         //introduction to nullable value type, used before in class definition without knowing it would be faced later
         //value types in itself cannot be null 
 
@@ -525,6 +525,11 @@ public class Program                      //Class Declaration
             outcome = carson[3];
             Console.WriteLine($"You entered a {outcome} imput");
         }
+
+
+
+
+
     } // end of <main> class
 }
 //end of <test> class
