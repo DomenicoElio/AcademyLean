@@ -535,8 +535,9 @@ public class Program                      //Class Declaration
             Console.WriteLine($"You entered a {outcome} imput");
         }
 
-
-
+        /*string sampleCollection = "Samples";
+        IEnumerator rator = sampleCollection.GetEnumerator();
+        while (rator.MoveNext()) { char c = (char)rator.Current; Console.Write(c + "."); }*/
 
 
     } // end of <main> class
