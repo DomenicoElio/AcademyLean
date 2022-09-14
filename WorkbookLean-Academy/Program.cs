@@ -1,6 +1,17 @@
 ﻿using System;
 using WorkbookLean_Academy;
 
+public interface IEnumerator{
+    bool MoveNext();
+    object Current { get; }
+    void Reset();
+}
+//defines the order in which the elements of the collection are trasversed
+
+public interface IEnumerable{
+    IEnumerator GetEnumerator();
+}
+//this definition allows for more flexibility, the logic is implemented separetely
 
 public class Human
 {
