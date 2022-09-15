@@ -574,6 +574,8 @@ public class Program                      //Class Declaration
         int[,] twoD = { { 5, 6 }, { 8, 9 } };
         WriteFirstValue(oneD); 
         WriteFirstValue(twoD); 
+        // whilst the first output will be one, the second output will be 5 - this is becase a two dimensional array, based on thi
+        // method will only print the first value itself - not the pair of values
 
 
 
