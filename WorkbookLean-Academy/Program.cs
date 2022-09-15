@@ -1,6 +1,14 @@
 ﻿using System;
 using WorkbookLean_Academy;
 
+
+public interface IList<T> : ICollection<T>, IEnumerable<T>, IEnumerable
+{
+    T this[int index] { get; set; }
+    int IndexOf(T item);
+    void Insert(int index, T item);
+    void RemoveAt(int index);
+}
 public interface IEnumerator{
     bool MoveNext();
     object Current { get; }
@@ -538,6 +546,8 @@ public class Program                      //Class Declaration
         /*string sampleCollection = "Samples";
         IEnumerator rator = sampleCollection.GetEnumerator();
         while (rator.MoveNext()) { char c = (char)rator.Current; Console.Write(c + "."); }*/
+
+
 
 
     } // end of <main> class
