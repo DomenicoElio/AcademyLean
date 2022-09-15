@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using WorkbookLean_Academy;
 
 
@@ -546,6 +547,22 @@ public class Program                      //Class Declaration
         /*string sampleCollection = "Samples";
         IEnumerator rator = sampleCollection.GetEnumerator();
         while (rator.MoveNext()) { char c = (char)rator.Current; Console.Write(c + "."); }*/
+
+        
+        StringBuilder[] builders = new StringBuilder[5];
+        builders[0] = new StringBuilder("builder1");
+        builders[1] = new StringBuilder("builder2");
+        builders[2] = new StringBuilder("builder3");
+        //this array will store value types and therefore each will have its dedicated space in memory
+
+        long[] numbers = new long[3];
+        numbers[0] = 12345;
+        numbers[1] = 54321;
+        //this array will instead store reference types and therefore, depending on the system, each array element will only occupy the space a reference necessitates
+        //arrays still always remain reference types because they are a class (<Array>)
+        //arrays will therefore always fail an equality test (because this will only check the memory address vaslue they refer to)
+        // instead of checking the actual values in the heap (for that, use "structural equality comparer")
+
 
 
 
