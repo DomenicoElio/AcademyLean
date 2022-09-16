@@ -572,15 +572,23 @@ public class Program                      //Class Declaration
         int[] oneD = { 3, 1, 2 };
         int[,] twoD = { { 5, 6 }, { 8, 9 } };
 
+        int[] sampleSortedArray = { 5, 3, 9, 7 };
+        string[] sampleDoubleSorting = { "five", "three", "nine", "seven" };
+
+        Console.WriteLine($"these are your unsorted array values: {sampleSortedArray} and {sampleDoubleSorting}");
+
         WriteFirstValue(oneD); 
         WriteFirstValue(twoD); 
         // whilst the first output will be one, the second output will be 5 - this is becase a two dimensional array, based on thi
         // method will only print the first value itself - not the pair of values
 
         Array.Sort(oneD);
+        Array.Sort(sampleSortedArray);
         //sample sorting method for array - will return oneD containing {1, 2, 3}
-        Array.Sort(twoD);
-
+        
+        Array.Sort(sampleSortedArray, sampleDoubleSorting);
+        //sample sorting two arrays (of different type) 
+        Console.WriteLine($"this is the value post sorting: {sampleSortedArray} and {sampleDoubleSorting}");
 
 
     } // end of <main> class
