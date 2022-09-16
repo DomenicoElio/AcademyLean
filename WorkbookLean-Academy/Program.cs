@@ -563,19 +563,23 @@ public class Program                      //Class Declaration
         //arrays will therefore always fail an equality test (because this will only check the memory address vaslue they refer to)
         // instead of checking the actual values in the heap (for that, use "structural equality comparer")
 
-        void WriteFirstValue(Array a)
-        {
+        void WriteFirstValue(Array a){
             Console.Write(a.Rank + "-dimensional; ");
             int[] indexers = new int[a.Rank];
             Console.WriteLine("First value is " + a.GetValue(indexers));
         }
 
-        int[] oneD = { 1, 2, 3 };
+        int[] oneD = { 3, 1, 2 };
         int[,] twoD = { { 5, 6 }, { 8, 9 } };
+
         WriteFirstValue(oneD); 
         WriteFirstValue(twoD); 
         // whilst the first output will be one, the second output will be 5 - this is becase a two dimensional array, based on thi
         // method will only print the first value itself - not the pair of values
+
+        Array.Sort(oneD);
+        //sample sorting method for array - will return oneD containing {1, 2, 3}
+        Array.Sort(twoD);
 
 
 
