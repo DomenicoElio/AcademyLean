@@ -2,7 +2,11 @@
 using System.Text;
 using WorkbookLean_Academy;
 
-
+public struct KeyValuePair<TKey, TValue>
+{
+    public TKey Key { get; }
+    public TValue Value { get; }
+}
 public interface IList<T> : ICollection<T>, IEnumerable<T>, IEnumerable
 {
     T this[int index] { get; set; }
