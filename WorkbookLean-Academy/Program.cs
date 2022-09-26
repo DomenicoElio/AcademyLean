@@ -297,7 +297,7 @@ public class Program                      //Class Declaration
         string bigName = "Domenico";
         Console.WriteLine($"my name is: {bigName}"); // work continued all to string interpolation and arrays*/
 
-        /*char[] name = new char[4]; // declearing an array with 4 elements (characters)
+        char[] name = new char[4]; // declearing an array with 4 elements (characters)
 
         name[0] = 'd';
         name[1] = 'o';
@@ -306,7 +306,7 @@ public class Program                      //Class Declaration
 
         Console.WriteLine(name[1]);
 
-        for (int i = 0; i < name.Length; i++) { Console.WriteLine(name[i]); }
+        for (int jam = 0; jam < name.Length; jam++) { Console.WriteLine(name[jam]); }
 
         char[] letters = new char[] { 'a', 'b', 'c' }; //initialization statement in two types
         int[] numbers = { 1, 2, 3 };
