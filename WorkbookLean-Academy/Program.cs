@@ -318,12 +318,12 @@ public class Program                      //Class Declaration
         /*Point[] f = new Point[500];
         int m = f[350].X;*/ //this example refers to the struct on line 13 and prints a value of 0
 
-        /*Point[] point = new Point[500];
-        for (int i = 0; i < point.Length; i++) { point[i] = new Point(); }*/
+        Point[] point = new Point[500];
+        for (int v = 0; v < point.Length; v++) { point[v] = new Point(); }
         // here the for iterated from 0 to 999 and here it assigns every iteration value with new point
         //an array, remains always a reference type, an array element can refer to a null value 
 
-        /*char[] vowels = new char[] { 'a', 'e', 'i', 'o', 'u' };
+        char[] vowels = new char[] { 'a', 'e', 'i', 'o', 'u' };
 
         char[] firstTwo = vowels[..2]; // 'a', 'e'
         char[] lastThree = vowels[2..]; // 'i', 'o', 'u'
@@ -333,9 +333,9 @@ public class Program                      //Class Declaration
 
         int[,] matrix = new int[3, 3];
 
-        for (int i = 0; i < matrix.GetLength(0); i++)
+        for (int sampleI = 0; sampleI < matrix.GetLength(0); sampleI++)
             for (int j = 0; j < matrix.GetLength(1); j++)
-                matrix[i, j] = i * 3 + j;
+                matrix[sampleI, j] = sampleI * 3 + j;
         // sample declration rectangular array with 3x3 dimensions (rectangular arrays can have n dimesions)
 
         int[,] matrixReloaded = new int[,]
@@ -343,7 +343,7 @@ public class Program                      //Class Declaration
         {0,1,2},
         {3,4,5},
         {6,7,8}
-        };*/
+        };
 
         // this is the same array as before, simple initialized and decleared immediately
 
