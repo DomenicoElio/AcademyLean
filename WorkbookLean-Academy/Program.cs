@@ -347,14 +347,14 @@ public class Program                      //Class Declaration
 
         // this is the same array as before, simple initialized and decleared immediately
 
-        /*int[][] jaggedMatrix = new int[3][];
+        int[][] jaggedMatrix = new int[3][];
 
-        for (int i = 0; i < matrix.Length; i++)
+        for (int intero = 0; intero < jaggedMatrix.Length; intero++)
         {
-            jaggedMatrix[i] = new int[3]; 
-            for (int j = 0; j < jaggedMatrix[i].Length; j++)
-                jaggedMatrix[i][j] = i * 3 + j;
-        }*/
+            jaggedMatrix[intero] = new int[3]; 
+            for (int j = 0; j < jaggedMatrix[intero].Length; j++)
+                jaggedMatrix[intero][j] = intero * 3 + j;
+        }
 
         //jagged arrays, being arrays of arrays, require for the outermost dimensions (0,3 so array 3x3) to be specified when decleared
         //the inner array is then created
