@@ -205,7 +205,7 @@ public class Program                      //Class Declaration
     }
 
     static string x = "Old Value";
-    //static ref string GetX() => ref x;
+    static ref string GetX() => ref x;
 
     static void Main() {           //Method Declaration
         int var = 15 * 10;      //Declearing and Initializing variable 
@@ -381,9 +381,9 @@ public class Program                      //Class Declaration
         Console.WriteLine(total);
 
 
-        /*ref string xRef = ref GetX(); 
+        ref string xRef = ref GetX(); 
         xRef = "New Value";
-        Console.WriteLine(x);*/
+        Console.WriteLine(x);
         //as seen per all variable declaration and initialization, instead of specifying the type we can let the program infer the type and use var
 
         var name = "Domenico";
