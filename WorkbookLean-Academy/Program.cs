@@ -2,6 +2,8 @@
 using System.Text;
 using WorkbookLean_Academy;
 
+Dictionary <DateTime, double> points;
+
 public struct KeyValuePair<TKey, TValue>
 {
     public TKey Key { get; }
@@ -176,8 +178,8 @@ public class Humanity {
 //public class Point { public int X, Y; }
 
 //public struct Point { public int X, Y; } 
-public class Program                      //Class Declaration
-{
+public class Program {                       //Class Declaration
+    
     string firstName;
     public Program(string firstName) { this.firstName = firstName; }
 
@@ -386,7 +388,7 @@ public class Program                      //Class Declaration
         Console.WriteLine(x);
         //as seen per all variable declaration and initialization, instead of specifying the type we can let the program infer the type and use var
 
-        var name = "Domenico";
+        var names = "Domenico";
         Console.WriteLine(name); // in this case inferred type is a string
 
         //very important section on null operators in page 70 to keep in mind when working with nulls in general
@@ -566,9 +568,9 @@ public class Program                      //Class Declaration
         builders[2] = new StringBuilder("builder3");
         //this array will store value types and therefore each will have its dedicated space in memory
 
-        long[] numbers = new long[3];
-        numbers[0] = 12345;
-        numbers[1] = 54321;
+        long[] workers = new long[3];
+        workers[0] = 12345;
+        workers[1] = 54321;
         //this array will instead store reference types and therefore, depending on the system, each array element will only occupy the space a reference necessitates
         //arrays still always remain reference types because they are a class (<Array>)
         //arrays will therefore always fail an equality test (because this will only check the memory address vaslue they refer to)
@@ -600,6 +602,8 @@ public class Program                      //Class Declaration
         Array.Sort(sampleSortedArray, sampleDoubleSorting);
         //sample sorting two arrays (of different type) 
         Console.WriteLine($"this is the value post sorting: {sampleSortedArray} and {sampleDoubleSorting}");
+
+
 
 
     } // end of <main> class
